@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KCSE AI Tutor</title>
-    <script>
-        async function askTutor() {
-            let question = document.getElementById("question").value;
-            let response = await fetch("/ask", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ question: question })
-            });
-            let data = await response.json();
-            document.getElementById("answer").innerText = "AI Tutor: " + data.answer;
-        }
-    </script>
+    <title>AI Tutor - The Future of Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    
 </head>
 <body>
-    <h1>AI Tutor for KCSE</h1>
-    <input type="text" id="question" placeholder="Ask a question...">
-    <button onclick="askTutor()">Ask</button>
-    <p id="answer"></p>
+    <header>
+        <h1>AI Tutor</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Learn Smarter with AI</h2>
+        <p>Experience the power of AI-driven tutoring.</p>
+        <a href="http://youtube.com"><button id="start-learning">Start Learning</button></a>
+    </section>
+    
+    <section id="features">
+        <h2>Why Choose AI Tutor?</h2>
+        <ul>
+            <li>⚡ Personalized Learning</li>
+            <li>🧠 AI-Powered Assistance</li>
+            <li>📚 Interactive Quizzes</li>
+        </ul>
+    </section>
+    
+    <section id="chatbot">
+        <h2>Chat with AI</h2>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box"></div>
+            <input type="text" id="user-input" placeholder="Ask me anything...">
+            <button id="send-btn">Send</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sheckler AI Tutor. All rights reserved.</p>
+    </footer>
+    
+    <script>
+       
+    </script>
 </body>
-<style>
-    body{
-        border: 1024px;
-        background-color: aqua;
-        background-image: image();
-    }
-</style>
 </html>

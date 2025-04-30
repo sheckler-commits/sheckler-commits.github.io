@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #306329, #03f06e);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: background 0.1s ease;
+}
+header:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    color: #0ef;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+nav a:hover {
+    color: rgb(172, 69, 185);
+}
+.hero {
+    padding: 50px 20px;
+}
+.hero h2 {
+    font-size: 2.5em;
+    transition: color 0.1s ease;
+}
+.hero h2:hover {
+    color: #08c;
+}
+button {
+    background: #0ef;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+button:hover {
+    background: rgb(184, 204, 0);
+    color: #fff;
+}
+.chat-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: background 0.1s ease;
+}
+.chat-container:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease;
+}
+.chat-box:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.1s ease;
+}
+#user-input:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+#start-learning {
+    padding: 10px;
+    background: #03f06e;
+    border: none;
+    color: rgb(255, 0, 55);
+}
+#send-btn {
+    padding: 10px;
+    border: none;
+    background: #0ef;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+#send-btn:hover {
+    background: #08c;
+    color: #fff;
+}

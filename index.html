@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCSE AI Tutor</title>
+    <script>
+        async function askTutor() {
+            let question = document.getElementById("question").value;
+            let response = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question: question })
+            });
+            let data = await response.json();
+            document.getElementById("answer").innerText = "AI Tutor: " + data.answer;
+        }
+    </script>
+</head>
+<body>
+    <h1>AI Tutor for KCSE</h1>
+    <input type="text" id="question" placeholder="Ask a question...">
+    <button onclick="askTutor()">Ask</button>
+    <p id="answer"></p>
+</body>
+<style>
+    body{
+        border: 1024px;
+        background-color: aqua;
+        background-image: image();
+    }
+</style>
+</html>

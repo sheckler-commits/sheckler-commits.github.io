@@ -12,9 +12,6 @@ header {
     backdrop-filter: blur(10px);
     transition: background 0.1s ease;
 }
-header:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,18 +25,12 @@ nav a {
     text-decoration: none;
     transition: color 0.1s ease;
 }
-nav a:hover {
-    color: rgb(172, 69, 185);
-}
 .hero {
     padding: 50px 20px;
 }
 .hero h2 {
     font-size: 2.5em;
     transition: color 0.1s ease;
-}
-.hero h2:hover {
-    color: #08c;
 }
 button {
     background: #0ef;
@@ -49,10 +40,6 @@ button {
     font-size: 1.2em;
     cursor: pointer;
     transition: background 0.1s ease, color 0.1s ease;
-}
-button:hover {
-    background: rgb(184, 204, 0);
-    color: #fff;
 }
 .chat-container {
     width: 80%;
@@ -64,9 +51,6 @@ button:hover {
     border-radius: 10px;
     transition: background 0.1s ease;
 }
-.chat-container:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
 .chat-box {
     height: 300px;
     overflow-y: auto;
@@ -77,9 +61,6 @@ button:hover {
     background: rgba(0, 0, 0, 0.3);
     transition: background 0.1s ease;
 }
-.chat-box:hover {
-    background: rgba(0, 0, 0, 0.5);
-}
 #user-input {
     width: 80%;
     padding: 10px;
@@ -88,9 +69,7 @@ button:hover {
     border-radius: 5px;
     transition: background 0.1s ease;
 }
-#user-input:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
+
 #start-learning {
     padding: 10px;
     background: #03f06e;
@@ -105,8 +84,4 @@ button:hover {
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.1s ease, color 0.1s ease;
-}
-#send-btn:hover {
-    background: #08c;
-    color: #fff;
 }
